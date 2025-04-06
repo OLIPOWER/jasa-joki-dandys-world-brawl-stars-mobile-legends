@@ -1,10 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Joki OLIPOWER</title>
+  <title>Jasa Joki Game Roblox Dandy's World, Brawl Stars, Mobile Legends | Toko OLIPOWER</title>
+  <meta name="description" content="Jasa joki terpercaya untuk game Roblox Dandy's World, Brawl Stars, dan Mobile Legends. Harga bersahabat, pelayanan cepat dan profesional hanya di Toko OLIPOWER.">
+  <meta name="keywords" content="jasa joki, Dandy's World, Roblox, Brawl Stars, Mobile Legends, joki game murah, joki OLIPOWER">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -47,6 +48,10 @@
       font-weight: bold;
       margin-top: 10px;
     }
+    textarea {
+      width: 100%;
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -72,17 +77,55 @@
   </ul>
 
   <div class="footer">
-    <p> Versi Indonesia : Jika ada pertanyaan mohon hubungi nomor WhatsApp di bawah ini. Yang mau ngajak main bareng tidak ada biaya tambahan.</p>
-    
+    <strong>Versi Indonesia (kontak):</strong>
+    <p>Jika ada pertanyaan mohon hubungi nomor WhatsApp di bawah ini. Yang mau ngajak main bareng tidak ada biaya tambahan.</p>
     <a class="whatsapp-button" href="https://wa.me/6289695902810" target="_blank">Chat via WhatsApp</a>
-    
     <p class="phone">Nomor WA: 0896-9590-2810</p>
 
     <br>
-    <strong>English version : (contact section only):</strong>
+    <strong>English version (contact):</strong>
     <p>For questions, please contact via WhatsApp below. Playing together has no extra cost.</p>
     <a class="whatsapp-button" href="https://wa.me/6289695902810" target="_blank">Chat via WhatsApp</a>
     <p class="phone">Phone number: +62 896-9590-2810</p>
+
+    <hr>
+    <h2>Rating & Komentar</h2>
+    <form id="feedback-form">
+      <label for="rating">Rating (1-5):</label>
+      <select id="rating" required>
+        <option value="">Pilih...</option>
+        <option value="1">1 - Buruk</option>
+        <option value="2">2 - Lumayan</option>
+        <option value="3">3 - Biasa aja</option>
+        <option value="4">4 - Bagus</option>
+        <option value="5">5 - Mantap!</option>
+      </select>
+      <br><br>
+      <label for="comment">Komentar:</label><br>
+      <textarea id="comment" rows="4" required></textarea>
+      <br><br>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div id="feedback-list" style="margin-top: 20px;"></div>
   </div>
+
+  <script>
+    const form = document.getElementById("feedback-form");
+    const list = document.getElementById("feedback-list");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const rating = document.getElementById("rating").value;
+      const comment = document.getElementById("comment").value;
+
+      const entry = document.createElement("div");
+      entry.style.marginBottom = "15px";
+      entry.innerHTML = `<strong>Rating:</strong> ${rating} / 5<br><strong>Komentar:</strong> ${comment}`;
+      list.prepend(entry);
+
+      form.reset();
+    });
+  </script>
 </body>
 </html>
