@@ -4,58 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jasa Joki Game Roblox Dandy's World, Brawl Stars, Mobile Legends | Toko OLIPOWER</title>
-  <meta name="description" content="Jasa joki terpercaya untuk game Roblox Dandy's World, Brawl Stars, dan Mobile Legends. Harga bersahabat, pelayanan cepat dan profesional hanya di Toko OLIPOWER.">
-  <meta name="keywords" content="jasa joki, Dandy's World, Roblox, Brawl Stars, Mobile Legends, joki game murah, joki OLIPOWER">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f3f3;
-      padding: 20px;
-      max-width: 700px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    h2 {
-      color: #34495e;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .footer {
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #ccc;
-      font-size: 14px;
-    }
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 15px;
-      background-color: #25D366;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .phone {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    textarea {
-      width: 100%;
-      max-width: 100%;
-    }
-  </style>
 </head>
 <body>
   <h1>Joki OLIPOWER</h1>
+
+  <p>
+    Kami menyediakan layanan jasa joki game populer seperti <strong>Roblox (RBL)</strong>, <strong>Dandy’s World (DW)</strong>, <strong>Brawl Stars (BS)</strong>, dan <strong>Mobile Legends (ML)</strong>. Harga bersahabat, pelayanan cepat, dan terpercaya hanya di Toko OLIPOWER!
+  </p>
 
   <h2>• Roblox (Dandy's World)</h2>
   <ul>
@@ -76,56 +31,37 @@
     <li>B. Rank, Mythic ~ Glory = Rp500.000</li>
   </ul>
 
-  <div class="footer">
-    <strong>Versi Indonesia (kontak):</strong>
-    <p>Jika ada pertanyaan mohon hubungi nomor WhatsApp di bawah ini. Yang mau ngajak main bareng tidak ada biaya tambahan.</p>
-    <a class="whatsapp-button" href="https://wa.me/6289695902810" target="_blank">Chat via WhatsApp</a>
-    <p class="phone">Nomor WA: 0896-9590-2810</p>
+  <strong>Versi Indonesia (kontak):</strong>
+  <p>Jika ada pertanyaan mohon hubungi nomor WhatsApp di bawah ini. Yang mau ngajak main bareng tidak ada biaya tambahan.</p>
+  <a href="https://wa.me/6289695902810">Chat via WhatsApp</a>
+  <p>Nomor WA: 0896-9590-2810</p>
 
-    <br>
-    <strong>English version (contact):</strong>
-    <p>For questions, please contact via WhatsApp below. Playing together has no extra cost.</p>
-    <a class="whatsapp-button" href="https://wa.me/6289695902810" target="_blank">Chat via WhatsApp</a>
-    <p class="phone">Phone number: +62 896-9590-2810</p>
+  <br>
+  <strong>English version (contact):</strong>
+  <p>For questions, please contact via WhatsApp below. Playing together has no extra cost.</p>
+  <a class="whatsapp-button" href="https://wa.me/6289695902810" target="_blank">Chat via WhatsApp</a>
+  <p class="phone">Phone number: +62 896-9590-2810</p>
 
-    <hr>
-    <h2>Rating & Komentar</h2>
-    <form id="feedback-form">
-      <label for="rating">Rating (1-5):</label>
-      <select id="rating" required>
-        <option value="">Pilih...</option>
-        <option value="1">1 - Buruk</option>
-        <option value="2">2 - Lumayan</option>
-        <option value="3">3 - Biasa aja</option>
-        <option value="4">4 - Bagus</option>
-        <option value="5">5 - Mantap!</option>
-      </select>
-      <br><br>
-      <label for="comment">Komentar:</label><br>
-      <textarea id="comment" rows="4" required></textarea>
-      <br><br>
-      <button type="submit">Kirim</button>
-    </form>
+  <hr>
 
-    <div id="feedback-list" style="margin-top: 20px;"></div>
-  </div>
+  <h2>Rating & Komentar</h2>
+  <form id="feedback-form">
+    <label for="rating">Rating (1-5):</label>
+    <select id="rating" required>
+      <option value="">Pilih...</option>
+      <option value="1">1 - Buruk</option>
+      <option value="2">2 - Lumayan</option>
+      <option value="3">3 - Biasa aja</option>
+      <option value="4">4 - Bagus</option>
+      <option value="5">5 - Mantap!</option>
+    </select>
+    <br><br>
+    <label for="comment">Komentar:</label><br>
+    <textarea id="comment" rows="4" required></textarea>
+    <br><br>
+    <button type="submit">Kirim</button>
+  </form>
 
-  <script>
-    const form = document.getElementById("feedback-form");
-    const list = document.getElementById("feedback-list");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const rating = document.getElementById("rating").value;
-      const comment = document.getElementById("comment").value;
-
-      const entry = document.createElement("div");
-      entry.style.marginBottom = "15px";
-      entry.innerHTML = `<strong>Rating:</strong> ${rating} / 5<br><strong>Komentar:</strong> ${comment}`;
-      list.prepend(entry);
-
-      form.reset();
-    });
-  </script>
+  <div id="feedback-list" style="margin-top: 20px;"></div>
 </body>
 </html>
